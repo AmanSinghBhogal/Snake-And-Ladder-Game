@@ -11,7 +11,6 @@ using namespace std;
 
 
 
-
 string square="01234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950";
 string nul= "          ";
 string ernul= "          ";
@@ -28,17 +27,19 @@ class game
 			d=2;
 			a=b=0;
 		}
-		void move();
-		void board();
-		void play();
-		void win();
-		void marks();
-		void player();
-		void erase2();
-		void Ladder();
+		void move();	//Used to make the move on Board.
+		void board();	//Prints the Board.
+		void play();	//Used to calculate the dice number.
+		void win();		//Checks if any player has won.
+		void marks();	//used to check which mark to use for which player and to mark it on board.
+		void player();	//Selects which player's turn it is.
+		void erase2();	//used to erase the mark from previous position once a new move is made.
+		void Ladder();	//Prints the Ladder.
 };
-int main()
-{	game g1;
+
+int main()		//Main Function.
+{	
+	game g1;
 	g1.play();
 	return 0;
 }
@@ -95,7 +96,6 @@ void game::win()
 	}
 }
 
-
 void game::board()
 {	system("cls");
 	cout.width(48);
@@ -141,6 +141,7 @@ void game::marks()
 		c=b;
 	}
 }
+
 void game::erase2()
 {	if(p==1&&c!=j&&j!=b)
 	{	if(j<10)
@@ -241,8 +242,8 @@ void game::Ladder()
 			c=b;
 		}
 	}
-
 }
+
 void game::move()
 {	marks();
 	Ladder();
