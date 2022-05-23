@@ -1,3 +1,4 @@
 <div align="center">
-  <h1 align="center"><img align="" src="./Screenshots/logo.png" alt="Error 404" height="50"> Snake and Ladders</h1>
+  <img align="center" src="./Screenshots/logo.png" alt="Error 404" height="200">
+  <h1 align="center">Snake and Ladders</h1>
 </div>
