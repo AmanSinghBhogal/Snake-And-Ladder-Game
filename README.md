@@ -31,11 +31,11 @@ Snakes and ladders is a board game for two or more players regarded today as a w
 ##### Step 1) Clone AmanSinghBhogal/Snake-And-Ladder-Game.
 ##### Step 2) Open Snake-And-Ladder-Game cloned Directory in Command Prompt and run the following command:
 ```
-gcc Snake_ladder.cpp -o Snake_ladder
+g++ Snake_ladder.cpp -o Snake_ladder
 ```
 #### Step 3) Next, Run the following Command (it will execute the previously compiled file):
 ```
-./Snake_ladder
+Snake_ladder.exe
 ```
 
 ***
