@@ -84,7 +84,11 @@ void game::play()
 	}while(i!=0);
 }
 void game::win()
-{	system("cls");
+{	
+	// For Windows use: system("cls");
+	system("cls");
+	// For Linux use: system("clear");
+	// system("clear");
 	board();
 	if(a==50||b==50)
 	{	cout<<"\n\n";
@@ -97,7 +101,11 @@ void game::win()
 }
 
 void game::board()
-{	system("cls");
+{	
+	// For Windows use: system("cls");
+	system("cls");
+	// For Linux use: system("clear");
+	// system("clear");
 	cout.width(48);
 	cout<<"Snake And Ladder\n\n";
 	cout.width(54);
